@@ -1,0 +1,75 @@
+//
+//  PrefixHeader.pch
+//  iOS工具类
+//
+//  Created by luoyang_ on 2016/11/3.
+//  Copyright © 2016年 luoyang_. All rights reserved.
+//
+
+
+#ifndef Header_h
+#define Header_h
+
+
+#ifdef __OBJC__
+#pragma mark 类别
+#import "UIView+MCCategory.h"
+#import "UIBarButtonItem+MCCategory.h"
+#import "UIColor+MCCategory.h"
+#import "NSDate+MCCategory.h"
+#import "NSDate+MCCategory.h"
+#import "MCToolManager.h"
+
+#endif
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"[%s:%d行] %s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(...)
+#endif
+//屏幕宽高
+#define   KScreenW   [UIScreen mainScreen].bounds.size.width
+#define   KScreenH   [UIScreen mainScreen].bounds.size.height
+//rgb
+#define KRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+//全局色
+#define KGlobalColor MCRGBColor(223, 223, 223)
+//判断数组为空
+#define IsArrEmpty(_ref)    (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref) count] == 0))
+//判断字符串为空
+#define IsStringEmpty(str) (([str isKindOfClass:[NSNull class]] || str == nil || [str length]<=0)? YES : NO )
+//判断字符串为空以及字符串是0
+#define NumberIsEqualToZero(number) ( [number isEqualToString:@"0"] || IsStringEmpty(number)? YES : NO )
+//循环引用弱引用
+#ifndef weakify
+#if DEBUG
+    #if __has_feature(objc_arc)
+        #define weakify(object) autoreleasepool{} __weak __typeof__(object) weak##_##object = object;
+        #else
+        #define weakify(object) autoreleasepool{} __block __typeof__(object) block##_##object = object;
+        #endif
+        #else
+        #if __has_feature(objc_arc)
+        #define weakify(object) try{} @finally{} {} __weak __typeof__(object) weak##_##object = object;
+        #else
+        #define weakify(object) try{} @finally{} {} __block __typeof__(object) block##_##object = object;
+        #endif
+    #endif
+#endif
+//循环引用强引用
+#ifndef strongify
+#if DEBUG
+#if __has_feature(objc_arc)
+#define strongify(object) autoreleasepool{} __typeof__(object) object = weak##_##object;
+#else
+#define strongify(object) autoreleasepool{} __typeof__(object) object = block##_##object;
+#endif
+#else
+#if __has_feature(objc_arc)
+#define strongify(object) try{} @finally{} __typeof__(object) object = weak##_##object;
+#else
+#define strongify(object) try{} @finally{} __typeof__(object) object = block##_##object;
+#endif
+#endif
+#endif
+
+#endif /* Header_h */
