@@ -16,7 +16,6 @@
     UIbarButtonItem     导航栏扩展接口
     NSString            字符串类的扩展
     UIColor             颜色类的扩展
- 3) 压缩类：----zip      使用时需要重新到gitHub上下载
 二。正则表达式类： -----MCToolManager
     1.判断QQ
     2.判断手机号

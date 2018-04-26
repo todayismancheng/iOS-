@@ -11,12 +11,6 @@
 @interface UIColor (MCCategory)
 
 /**
- *  根据颜色返回一张image
- *
- *  @return UIImage
- */
-- (UIImage *)imageWithSelf;
-/**
  *  随机返回一种颜色
  *
  *  @return UIColor

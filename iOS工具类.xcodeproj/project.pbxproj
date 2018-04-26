@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63AA92921DEFBC95009B23DA /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 63AA928A1DEFBC95009B23DA /* ioapi.c */; };
-		63AA92931DEFBC95009B23DA /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 63AA928C1DEFBC95009B23DA /* mztools.c */; };
-		63AA92941DEFBC96009B23DA /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 63AA928E1DEFBC95009B23DA /* unzip.c */; };
-		63AA92951DEFBC96009B23DA /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 63AA92901DEFBC95009B23DA /* zip.c */; };
-		63AA92981DEFBCA0009B23DA /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 63AA92971DEFBCA0009B23DA /* ZipArchive.m */; };
 		DE0CA7B31FF333FE00860331 /* MCCenterBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0CA7AE1FF333FE00860331 /* MCCenterBGView.m */; };
 		DE0CA7B41FF333FE00860331 /* MCView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0CA7B01FF333FE00860331 /* MCView.m */; };
 		DE0CA7B51FF333FE00860331 /* MCAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0CA7B11FF333FE00860331 /* MCAnimation.m */; };
@@ -48,17 +43,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		63AA92891DEFBC95009B23DA /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
-		63AA928A1DEFBC95009B23DA /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
-		63AA928B1DEFBC95009B23DA /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
-		63AA928C1DEFBC95009B23DA /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
-		63AA928D1DEFBC95009B23DA /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
-		63AA928E1DEFBC95009B23DA /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
-		63AA928F1DEFBC95009B23DA /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
-		63AA92901DEFBC95009B23DA /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
-		63AA92911DEFBC95009B23DA /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
-		63AA92961DEFBCA0009B23DA /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
-		63AA92971DEFBCA0009B23DA /* ZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
 		DE0CA7AD1FF333FE00860331 /* MCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCView.h; sourceTree = "<group>"; };
 		DE0CA7AE1FF333FE00860331 /* MCCenterBGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCenterBGView.m; sourceTree = "<group>"; };
 		DE0CA7AF1FF333FE00860331 /* MCAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAnimation.h; sourceTree = "<group>"; };
@@ -135,32 +119,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		63AA92871DEFBC5E009B23DA /* zip */ = {
-			isa = PBXGroup;
-			children = (
-				63AA92961DEFBCA0009B23DA /* ZipArchive.h */,
-				63AA92971DEFBCA0009B23DA /* ZipArchive.m */,
-				63AA92881DEFBC95009B23DA /* minizip */,
-			);
-			path = zip;
-			sourceTree = "<group>";
-		};
-		63AA92881DEFBC95009B23DA /* minizip */ = {
-			isa = PBXGroup;
-			children = (
-				63AA92891DEFBC95009B23DA /* crypt.h */,
-				63AA928A1DEFBC95009B23DA /* ioapi.c */,
-				63AA928B1DEFBC95009B23DA /* ioapi.h */,
-				63AA928C1DEFBC95009B23DA /* mztools.c */,
-				63AA928D1DEFBC95009B23DA /* mztools.h */,
-				63AA928E1DEFBC95009B23DA /* unzip.c */,
-				63AA928F1DEFBC95009B23DA /* unzip.h */,
-				63AA92901DEFBC95009B23DA /* zip.c */,
-				63AA92911DEFBC95009B23DA /* zip.h */,
-			);
-			path = minizip;
-			sourceTree = "<group>";
-		};
 		DE0CA7AB1FF333FE00860331 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,7 +203,6 @@
 			children = (
 				DE0CA7AB1FF333FE00860331 /* Lib */,
 				DEAFE34D1E559D2F004B03AE /* MCToolManager */,
-				63AA92871DEFBC5E009B23DA /* zip */,
 				DE4BB84B1DE2F12800DDE53B /* BaseView */,
 				DE7F82C01DD1B38D003F5F13 /* log */,
 				DE7F82BC1DD1B384003F5F13 /* Category */,
@@ -422,17 +379,14 @@
 				DE7C346E1DF9305600CE9174 /* NSString+MCCategory.m in Sources */,
 				DECAB865200DC3ED00FFDAE7 /* AFHTTPSessionManager.m in Sources */,
 				DEC3FEB32061FD3900995381 /* NSArray+Log.m in Sources */,
-				63AA92981DEFBCA0009B23DA /* ZipArchive.m in Sources */,
 				DE0CA7B31FF333FE00860331 /* MCCenterBGView.m in Sources */,
 				DEAFE35B1E559D2F004B03AE /* MCToolManager.m in Sources */,
 				DE0CA7BA1FF33C5200860331 /* MCCTitleViewController.m in Sources */,
-				63AA92931DEFBC95009B23DA /* mztools.c in Sources */,
 				DE7F82B51DD00B89003F5F13 /* RSAEncryptor.m in Sources */,
 				DE0CA7B51FF333FE00860331 /* MCAnimation.m in Sources */,
 				DEAFE35C1E559D2F004B03AE /* URLClass.m in Sources */,
 				DECAB866200DC3ED00FFDAE7 /* AFURLSessionManager.m in Sources */,
 				DE0CA7B41FF333FE00860331 /* MCView.m in Sources */,
-				63AA92941DEFBC96009B23DA /* unzip.c in Sources */,
 				DE7F82C51DD1B6B3003F5F13 /* NSDate+MCCategory.m in Sources */,
 				DE4C6E461DCAC4A900FBD47C /* ViewController.m in Sources */,
 				DE4C6E431DCAC4A900FBD47C /* AppDelegate.m in Sources */,
@@ -440,8 +394,6 @@
 				DE7F82BF1DD1B384003F5F13 /* UIView+MCCategory.m in Sources */,
 				DE4C6E401DCAC4A900FBD47C /* main.m in Sources */,
 				DECFD6091E0BD181006161E9 /* UIColor+MCCategory.m in Sources */,
-				63AA92921DEFBC95009B23DA /* ioapi.c in Sources */,
-				63AA92951DEFBC96009B23DA /* zip.c in Sources */,
 				DE0CA7BB1FF33C5200860331 /* MCCScanView.m in Sources */,
 				DE90CF6B1DE6C3D000BACE35 /* UIBarButtonItem+MCCategory.m in Sources */,
 				DECAB864200DC3ED00FFDAE7 /* AFURLResponseSerialization.m in Sources */,
