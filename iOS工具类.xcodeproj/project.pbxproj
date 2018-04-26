@@ -12,6 +12,8 @@
 		DE0CA7B51FF333FE00860331 /* MCAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0CA7B11FF333FE00860331 /* MCAnimation.m */; };
 		DE0CA7BA1FF33C5200860331 /* MCCTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0CA7B81FF33C5200860331 /* MCCTitleViewController.m */; };
 		DE0CA7BB1FF33C5200860331 /* MCCScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0CA7B91FF33C5200860331 /* MCCScanView.m */; };
+		DE1712E32091FCE500BEED18 /* UIView+RadarAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1712E22091FCE500BEED18 /* UIView+RadarAnimation.m */; };
+		DE1712E62091FD0B00BEED18 /* UIImage+MCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1712E52091FD0B00BEED18 /* UIImage+MCCategory.m */; };
 		DE4C6E401DCAC4A900FBD47C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C6E3F1DCAC4A900FBD47C /* main.m */; };
 		DE4C6E431DCAC4A900FBD47C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C6E421DCAC4A900FBD47C /* AppDelegate.m */; };
 		DE4C6E461DCAC4A900FBD47C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C6E451DCAC4A900FBD47C /* ViewController.m */; };
@@ -53,6 +55,10 @@
 		DE0CA7B71FF33C5200860331 /* MCCScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCScanView.h; sourceTree = "<group>"; };
 		DE0CA7B81FF33C5200860331 /* MCCTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCTitleViewController.m; sourceTree = "<group>"; };
 		DE0CA7B91FF33C5200860331 /* MCCScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCCScanView.m; sourceTree = "<group>"; };
+		DE1712E12091FCE500BEED18 /* UIView+RadarAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RadarAnimation.h"; sourceTree = "<group>"; };
+		DE1712E22091FCE500BEED18 /* UIView+RadarAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RadarAnimation.m"; sourceTree = "<group>"; };
+		DE1712E42091FD0B00BEED18 /* UIImage+MCCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MCCategory.h"; sourceTree = "<group>"; };
+		DE1712E52091FD0B00BEED18 /* UIImage+MCCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MCCategory.m"; sourceTree = "<group>"; };
 		DE4C6E3B1DCAC4A900FBD47C /* iOS工具类.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS工具类.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4C6E3F1DCAC4A900FBD47C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DE4C6E411DCAC4A900FBD47C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -227,6 +233,10 @@
 		DE7F82BC1DD1B384003F5F13 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				DE1712E42091FD0B00BEED18 /* UIImage+MCCategory.h */,
+				DE1712E52091FD0B00BEED18 /* UIImage+MCCategory.m */,
+				DE1712E12091FCE500BEED18 /* UIView+RadarAnimation.h */,
+				DE1712E22091FCE500BEED18 /* UIView+RadarAnimation.m */,
 				DE7F82BD1DD1B384003F5F13 /* UIView+MCCategory.h */,
 				DE7F82BE1DD1B384003F5F13 /* UIView+MCCategory.m */,
 				DE7F82C31DD1B6B3003F5F13 /* NSDate+MCCategory.h */,
@@ -382,6 +392,7 @@
 				DE0CA7B31FF333FE00860331 /* MCCenterBGView.m in Sources */,
 				DEAFE35B1E559D2F004B03AE /* MCToolManager.m in Sources */,
 				DE0CA7BA1FF33C5200860331 /* MCCTitleViewController.m in Sources */,
+				DE1712E32091FCE500BEED18 /* UIView+RadarAnimation.m in Sources */,
 				DE7F82B51DD00B89003F5F13 /* RSAEncryptor.m in Sources */,
 				DE0CA7B51FF333FE00860331 /* MCAnimation.m in Sources */,
 				DEAFE35C1E559D2F004B03AE /* URLClass.m in Sources */,
@@ -390,6 +401,7 @@
 				DE7F82C51DD1B6B3003F5F13 /* NSDate+MCCategory.m in Sources */,
 				DE4C6E461DCAC4A900FBD47C /* ViewController.m in Sources */,
 				DE4C6E431DCAC4A900FBD47C /* AppDelegate.m in Sources */,
+				DE1712E62091FD0B00BEED18 /* UIImage+MCCategory.m in Sources */,
 				DECAB868200DC3ED00FFDAE7 /* AFNetworkReachabilityManager.m in Sources */,
 				DE7F82BF1DD1B384003F5F13 /* UIView+MCCategory.m in Sources */,
 				DE4C6E401DCAC4A900FBD47C /* main.m in Sources */,

@@ -14,7 +14,7 @@
  ***/
 #import "MCCTitleViewController.h"
 
-@interface MCCTitleViewController ()
+@interface MCCTitleViewController ()<UIScrollViewDelegate>
 
 /** 标签栏底部的红色指示器 */
 @property (nonatomic, weak) UIView *indicatorView;
@@ -48,30 +48,13 @@
 {
 #warning 此处添加需要显示的标题的titleview 用之前一定要添加
     /*
-    XMGTopicViewController *all = [[XMGTopicViewController alloc] init];
-    all.title = @"全部";
-    all.type = XMGTopicTypeAll;
-    [self addChildViewController:all];
-    
-    XMGTopicViewController *video = [[XMGTopicViewController alloc] init];
-    video.title = @"视频";
-    video.type = XMGTopicTypeVideo;
-    [self addChildViewController:video];
-    
-    XMGTopicViewController *voice = [[XMGTopicViewController alloc] init];
-    voice.title = @"声音";
-    voice.type = XMGTopicTypeVoice;
-    [self addChildViewController:voice];
-    
-    XMGTopicViewController *picture = [[XMGTopicViewController alloc] init];
-    picture.title = @"图片";
-    picture.type = XMGTopicTypePicture;
-    [self addChildViewController:picture];
-    
-    XMGTopicViewController *word = [[XMGTopicViewController alloc] init];
-    word.title = @"段子";
-    word.type = XMGTopicTypeWord;
-    [self addChildViewController:word];
+     UIViewControllerone *one = [[UIViewController alloc] init];
+     one = @"1";
+     [self addChildViewController:one];
+     
+     UIViewControllerotwo *two = [[UIViewController alloc] init];
+     two.title = @"2";
+     [self addChildViewController:two];
      */
 }
 /**

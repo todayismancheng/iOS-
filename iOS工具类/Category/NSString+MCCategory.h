@@ -53,4 +53,9 @@
  *  @return NSdate
  */
 - (NSDate *)dateWithDateFormat:(NSString *)formatStr;
+
+/*
+ 返回UUID的的字符串
+ */
++ (NSString *)stringWithUUID;
 @end
