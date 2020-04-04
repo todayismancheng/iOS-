@@ -14,6 +14,8 @@
 		DE0CA7BB1FF33C5200860331 /* MCCScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0CA7B91FF33C5200860331 /* MCCScanView.m */; };
 		DE1712E32091FCE500BEED18 /* UIView+RadarAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1712E22091FCE500BEED18 /* UIView+RadarAnimation.m */; };
 		DE1712E62091FD0B00BEED18 /* UIImage+MCCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1712E52091FD0B00BEED18 /* UIImage+MCCategory.m */; };
+		DE39A3D224389C9C005E8A41 /* LEOProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE39A3D024389C9C005E8A41 /* LEOProxy.m */; };
+		DE39A3D324389C9C005E8A41 /* LEOAliveThread.m in Sources */ = {isa = PBXBuildFile; fileRef = DE39A3D124389C9C005E8A41 /* LEOAliveThread.m */; };
 		DE4C6E401DCAC4A900FBD47C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C6E3F1DCAC4A900FBD47C /* main.m */; };
 		DE4C6E431DCAC4A900FBD47C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C6E421DCAC4A900FBD47C /* AppDelegate.m */; };
 		DE4C6E461DCAC4A900FBD47C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4C6E451DCAC4A900FBD47C /* ViewController.m */; };
@@ -59,6 +61,10 @@
 		DE1712E22091FCE500BEED18 /* UIView+RadarAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RadarAnimation.m"; sourceTree = "<group>"; };
 		DE1712E42091FD0B00BEED18 /* UIImage+MCCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MCCategory.h"; sourceTree = "<group>"; };
 		DE1712E52091FD0B00BEED18 /* UIImage+MCCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MCCategory.m"; sourceTree = "<group>"; };
+		DE39A3CE24389C9C005E8A41 /* LEOProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEOProxy.h; sourceTree = "<group>"; };
+		DE39A3CF24389C9C005E8A41 /* LEOAliveThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEOAliveThread.h; sourceTree = "<group>"; };
+		DE39A3D024389C9C005E8A41 /* LEOProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEOProxy.m; sourceTree = "<group>"; };
+		DE39A3D124389C9C005E8A41 /* LEOAliveThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEOAliveThread.m; sourceTree = "<group>"; };
 		DE4C6E3B1DCAC4A900FBD47C /* iOS工具类.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS工具类.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE4C6E3F1DCAC4A900FBD47C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DE4C6E411DCAC4A900FBD47C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,6 +153,17 @@
 			path = AnimationLoading;
 			sourceTree = "<group>";
 		};
+		DE39A3CD24389C68005E8A41 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DE39A3CF24389C9C005E8A41 /* LEOAliveThread.h */,
+				DE39A3D124389C9C005E8A41 /* LEOAliveThread.m */,
+				DE39A3CE24389C9C005E8A41 /* LEOProxy.h */,
+				DE39A3D024389C9C005E8A41 /* LEOProxy.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		DE4BB84B1DE2F12800DDE53B /* BaseView */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +224,7 @@
 		DE4C6E551DCAC4B500FBD47C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				DE39A3CD24389C68005E8A41 /* Other */,
 				DE0CA7AB1FF333FE00860331 /* Lib */,
 				DEAFE34D1E559D2F004B03AE /* MCToolManager */,
 				DE4BB84B1DE2F12800DDE53B /* BaseView */,
@@ -349,6 +367,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -402,11 +421,13 @@
 				DE4C6E461DCAC4A900FBD47C /* ViewController.m in Sources */,
 				DE4C6E431DCAC4A900FBD47C /* AppDelegate.m in Sources */,
 				DE1712E62091FD0B00BEED18 /* UIImage+MCCategory.m in Sources */,
+				DE39A3D324389C9C005E8A41 /* LEOAliveThread.m in Sources */,
 				DECAB868200DC3ED00FFDAE7 /* AFNetworkReachabilityManager.m in Sources */,
 				DE7F82BF1DD1B384003F5F13 /* UIView+MCCategory.m in Sources */,
 				DE4C6E401DCAC4A900FBD47C /* main.m in Sources */,
 				DECFD6091E0BD181006161E9 /* UIColor+MCCategory.m in Sources */,
 				DE0CA7BB1FF33C5200860331 /* MCCScanView.m in Sources */,
+				DE39A3D224389C9C005E8A41 /* LEOProxy.m in Sources */,
 				DE90CF6B1DE6C3D000BACE35 /* UIBarButtonItem+MCCategory.m in Sources */,
 				DECAB864200DC3ED00FFDAE7 /* AFURLResponseSerialization.m in Sources */,
 				DECAB86F200DD29B00FFDAE7 /* MCCGuideViewController.m in Sources */,
